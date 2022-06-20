@@ -1,0 +1,17 @@
+@import './utilities/_variables';
+@import './basik/_reset';
+
+// Main-page__________________________________________
+@import './layout/modal';
+@import './layout/header';
+@import './layout/form';
+@import './layout/hero';
+@import './layout/specifics';
+@import './layout/do';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+// Portfolio-page_____________________________________
+@import './layout/filter';
+@import './layout/portfolio';

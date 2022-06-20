@@ -1,0 +1,120 @@
+.footer-columns {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-column:not(:last-child) {
+    margin-right: 70px;
+}
+
+.footer-column:last-child {
+    margin-left: auto;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-dark-gray);
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo-white {
+    color: var(--text-white);
+
+    transition: color var(--time-animatio) var(--cubic-bezier);
+}
+
+.logo:hover .logo-white,
+.logo:focus .logo-white {
+    color: var(--accent);
+}
+
+.address {
+    font-style: inherit;
+}
+
+.address-link {
+    color: var(--text-gray-alfa);
+
+    transition: color var(--time-animatio) var(--cubic-bezier);
+}
+
+.address-link[target='_blank'] {
+    color: var(--text-white);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent);
+}
+
+.address-list>.item {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Address____________________________________ */
+.footer .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer .circle {
+    background-color: var(--background-white-transperent);
+}
+
+.footer .circle:hover,
+.footer .circle:focus {
+    background-color: var(--accent);
+}
+
+.footer .social-icon {
+    fill: var(--background-white);
+}
+
+/* Social________________________________________ */
+
+.footer .title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+/* Form__________________________________________ */
+
+.form {
+    display: flex;
+}
+
+.form .email {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    margin-right: 12px;
+
+    color: var(--text-white);
+    background-color: transparent;
+    margin-right: 12px;
+    border: 2px solid var(--white-transperent);
+    border-radius: 4px;
+}
+
+.form .email::placeholder {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-icon {
+    margin-left: 10px;
+}

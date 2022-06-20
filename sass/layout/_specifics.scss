@@ -1,0 +1,39 @@
+.specifics {
+    padding-bottom: 0px;
+}
+
+.specifics-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.specifics-item {
+    flex-basis: calc(100% / 4 - var(--card-gap));
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.specifics-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--background-light-gray);
+    margin-bottom: 30px;
+}
+
+.spec-svg {
+    width: 70px;
+    height: 70px;
+}
