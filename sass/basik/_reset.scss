@@ -13,13 +13,7 @@ font-weight: 500; link h3
 font-weight: 700; button h2 h3
 font-weight: 900; h1 */
 /* ----------------------------------------------------------------------------------------------------------------------- */
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: solid tomato; */
-}
+
 body {
   margin: 0px;
   background-color: var(--background-white);
@@ -37,45 +31,4 @@ img {
 p {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-.section {
-  padding: 94px 0px;
-}
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-.title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: var(--text-dark-gray);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-gap));
-  margin-left: calc(-1 * var(--card-gap));
-}
-.card-item {
-  margin-top: var(--card-gap);
-  margin-left: var(--card-gap);
 }
