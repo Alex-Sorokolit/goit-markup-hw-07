@@ -22,14 +22,14 @@
     margin-bottom: 20px;
 }
 
-.logo-white {
+.logo--white {
     color: var(--text-white);
 
     transition: color var(--time-animatio) var(--cubic-bezier);
 }
 
-.logo:hover .logo-white,
-.logo:focus .logo-white {
+.logo:hover .logo--white,
+.logo:focus .logo--white {
     color: var(--accent);
 }
 
@@ -37,14 +37,18 @@
 .address {
     font-style: inherit;
 }
+.address-list__item {
+    display: block;
+    margin-bottom: 5px;
+}
 
-.address-link {
+.address-list__link {
     color: var(--text-gray-alfa);
 
     transition: color var(--time-animatio) var(--cubic-bezier);
 }
 
-.address-link[target='_blank'] {
+.address-list__link--white {
     color: var(--text-white);
 }
 
@@ -53,10 +57,7 @@
     color: var(--accent);
 }
 
-.address-list>.item {
-    display: block;
-    margin-bottom: 5px;
-}
+
 
 /* Social________________________________________ */
 
@@ -90,11 +91,11 @@
 
 /* Form__________________________________________ */
 
-.form {
+.subscribe {
     display: flex;
 }
 
-.form .email {
+.subscribe__email {
     width: 358px;
     height: 50px;
     padding: 15px;
@@ -107,7 +108,7 @@
     border-radius: 4px;
 }
 
-.form .email::placeholder {
+.subscribe__email::placeholder {
     flex-grow: 1;
     font-size: 16px;
     line-height: 1.25;
@@ -115,6 +116,6 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-icon {
+.subscribe__icon {
     margin-left: 10px;
 }

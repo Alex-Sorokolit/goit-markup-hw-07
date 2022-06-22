@@ -76,7 +76,6 @@ p {
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid tomato;
 }
 
 .section {
@@ -227,7 +226,7 @@ p {
   fill: var(--accent);
 }
 
-.icon-close {
+.close-button__icon {
   width: 18px;
   height: 18px;
 }
@@ -349,7 +348,7 @@ margin-right: 50px;
   margin-bottom: 12px;
 }
 
-.input-label {
+.feedback-input__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -357,12 +356,12 @@ margin-right: 50px;
   letter-spacing: 0.01em;
 }
 
-.input-wrap {
+.feedback-input__wrap {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal-input {
+.feedback-input {
   width: 100%;
   height: 40px;
   border: 1px solid var(--border-gray);
@@ -372,12 +371,12 @@ margin-right: 50px;
   transition: border var(--time-animatio) var(--cubic-bezier);
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.feedback-input:hover,
+.feedback-input:focus {
   border: 1px solid var(--accent);
 }
 
-.input-icon {
+.feedback-input__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -385,8 +384,8 @@ margin-right: 50px;
   transition: fill var(--time-animatio) var(--cubic-bezier);
 }
 
-.modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
+.feedback-input:hover + .feedback-input__icon,
+.feedback-input:focus + .feedback-input__icon {
   fill: var(--accent);
 }
 
@@ -414,11 +413,11 @@ margin-right: 50px;
   border: 1px solid var(--accent);
 }
 
-.checkbox-wrap {
+.privacy {
   margin-bottom: 30px;
 }
 
-.privacy-text {
+.privacy__text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,7 +428,7 @@ margin-right: 50px;
   cursor: pointer;
 }
 
-.custom-checkbox {
+.privacy__checkbox {
   width: 16px;
   height: 15px;
   border: 2px solid var(--text-dark-gray);
@@ -441,34 +440,33 @@ margin-right: 50px;
   transition: border var(--time-animatio) var(--cubic-bezier);
 }
 
-.privacy-text:hover .custom-checkbox {
+.privacy__text:hover .privacy__checkbox {
   border: 2px solid var(--accent);
 }
 
-.privacy-checkbox:focus + .privacy-text .custom-checkbox {
+.checkbox:focus + .privacy__text .privacy__checkbox {
   border: 2px solid var(--accent);
 }
 
-.privacy-checkbox:checked + .privacy-text .custom-checkbox {
+.checkbox:checked + .privacy__text .privacy__checkbox {
   background-color: var(--accent);
   /* border: 2px solid transparent; */
   border: none;
 }
 
-.privacy-checkbox:checked + .privacy-text .check-icon {
+.checkbox:checked + .privacy__text .privacy__icon {
   fill: var(--background-white);
 }
 
-.check-icon {
+.privacy__icon {
   fill: transparent;
 }
 
-.privacy-link {
+.privacy__link {
   color: var(--accent);
 }
 
-.modal .submit-button {
-  padding: 10px 55px;
+.feedback__button {
   margin-left: auto;
   margin-right: auto;
   transition: background-color var(--time-animatio) var(--cubic-bezier);
@@ -694,13 +692,13 @@ margin-right: 50px;
   margin-bottom: 20px;
 }
 
-.logo-white {
+.logo--white {
   color: var(--text-white);
   transition: color var(--time-animatio) var(--cubic-bezier);
 }
 
-.logo:hover .logo-white,
-.logo:focus .logo-white {
+.logo:hover .logo--white,
+.logo:focus .logo--white {
   color: var(--accent);
 }
 
@@ -709,23 +707,23 @@ margin-right: 50px;
   font-style: inherit;
 }
 
-.address-link {
+.address-list__item {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.address-list__link {
   color: var(--text-gray-alfa);
   transition: color var(--time-animatio) var(--cubic-bezier);
 }
 
-.address-link[target=_blank] {
+.address-list__link--white {
   color: var(--text-white);
 }
 
 .address-link:hover,
 .address-link:focus {
   color: var(--accent);
-}
-
-.address-list > .item {
-  display: block;
-  margin-bottom: 5px;
 }
 
 /* Social________________________________________ */
@@ -757,11 +755,11 @@ margin-right: 50px;
 }
 
 /* Form__________________________________________ */
-.form {
+.subscribe {
   display: flex;
 }
 
-.form .email {
+.subscribe__email {
   width: 358px;
   height: 50px;
   padding: 15px;
@@ -773,7 +771,7 @@ margin-right: 50px;
   border-radius: 4px;
 }
 
-.form .email::placeholder {
+.subscribe__email::placeholder {
   flex-grow: 1;
   font-size: 16px;
   line-height: 1.25;
@@ -781,7 +779,7 @@ margin-right: 50px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-icon {
+.subscribe__icon {
   margin-left: 10px;
 }
 
