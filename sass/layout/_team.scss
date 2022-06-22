@@ -2,7 +2,7 @@
     background-color: var(--background-light-gray);
 }
 
-.team-list>.item {
+.team-list__item {
     display: block;
     background-color: var(--background-white);
     box-shadow: var(--shadow);
@@ -10,23 +10,21 @@
     width: calc(100% / 4 - var(--card-gap));
 }
 
-.team-list .photo {
-    margin-bottom: 20px;
-}
 
-.team-worker {
-    margin-bottom: 10px;
-}
-
-.team-worker,
-.team-description {
+// card-text_____________________________________
+.card-text__title,
+.card-text__description {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
     text-align: center;
 }
 
-.team-description {
+.card-text__title {
+    margin-bottom: 10px;
+}
+
+.card-text__description {
     margin-bottom: 16px;
 }
 
@@ -37,7 +35,17 @@
     align-items: center;
 }
 
-.circle {
+
+// social________________________________________
+.social-list {
+    display: flex;
+}
+
+.social-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,20 +57,13 @@
     transition: background-color var(--time-animatio) var(--cubic-bezier);
 }
 
-.social-list {
-    display: flex;
-}
 
-.social-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.circle:hover,
-.circle:focus {
+.social-list__circle:hover,
+.social-list__circle:focus {
     background-color: var(--accent);
 }
 
-.social-icon {
+.social-list__icon {
     width: 20px;
     height: 20px;
     fill: var(--icon-gray);
@@ -70,7 +71,7 @@
     transition: fill var(--time-animatio) var(--cubic-bezier);
 }
 
-.circle:hover .social-icon,
-.circle:focus .social-icon {
+.social-list__circle:hover .social-list__icon,
+.social-list__circle:focus .social-list__icon {
     fill: var(--background-white);
 }

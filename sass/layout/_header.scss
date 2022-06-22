@@ -18,17 +18,12 @@
     align-items: center;
 }
 
-
 .header__logo {
     margin-right: 93px;
 }
 
 .logo--black {
     color: var(--text-black);
-
-    /* transition-property: color;
-  transition-duration: var(--time-animatio);
-  transition-timing-function: var(--cubic-bezier); */
     transition: color var(--time-animatio) var(--cubic-bezier);
 }
 
@@ -38,13 +33,14 @@
 }
 
 
+/* Nav-list___________________________________________ */
 
 .nav-list {
     display: flex;
     
 }
 
-/* Відступи пунктів навігації_________________________ */
+/* Відступи пунктів навігації*/
 .nav-list__item + .nav-list__item {
     margin-left: 50px;
 }
@@ -62,9 +58,6 @@ margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-
-
-    
 }
 
 .nav-list__link {
@@ -91,18 +84,7 @@ margin-right: 50px;
 }
 
 
-/* ___________________________________________ */
-
-// .nav-list .link,
-// .auth-item .link {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 31px;
-//     transition: color var(--time-animatio) var(--cubic-bezier);
-// }
-
-
+/* Auth-list___________________________________________ */
 
 .auth-list {
     display: flex;
@@ -114,14 +96,20 @@ margin-right: 50px;
     margin-left: 30px;
 }
 
-.auth
+.auth-list__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 31px;
+    transition: color var(--time-animatio) var(--cubic-bezier);
+}
 
-.auth-item .link:hover,
-.auth-item .link:focus {
+.auth-list__link:hover,
+.auth-list__link:focus {
     color: var(--accent);
 }
 
-.auth-icon {
+.auth-list__icon {
     margin-right: 10px;
     fill: currentColor;
 }

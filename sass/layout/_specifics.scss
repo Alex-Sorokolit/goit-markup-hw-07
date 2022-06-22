@@ -2,29 +2,11 @@
     padding-bottom: 0px;
 }
 
-.specifics-title {
-    margin-bottom: 10px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase;
-}
-
-.specifics-item {
+.specifics-list__item {
     flex-basis: calc(100% / 4 - var(--card-gap));
 }
 
-.section-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.specifics-icon {
+.specifics-list__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +15,16 @@
     margin-bottom: 30px;
 }
 
-.spec-svg {
+.specifics-list__svg {
     width: 70px;
     height: 70px;
+}
+
+.specifics-list__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
