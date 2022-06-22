@@ -33,6 +33,7 @@
     color: var(--accent);
 }
 
+/* Address____________________________________ */
 .address {
     font-style: inherit;
 }
@@ -57,24 +58,6 @@
     margin-bottom: 5px;
 }
 
-/* Address____________________________________ */
-.footer .item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.footer .circle {
-    background-color: var(--background-white-transperent);
-}
-
-.footer .circle:hover,
-.footer .circle:focus {
-    background-color: var(--accent);
-}
-
-.footer .social-icon {
-    fill: var(--background-white);
-}
-
 /* Social________________________________________ */
 
 .footer .title {
@@ -86,6 +69,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-white);
+}
+
+.footer .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list__circle--transparent {
+    background-color: var(--background-white-transperent);
+}
+
+.social-list__circle--transparent:hover,
+.social-list__circle--transparent:focus {
+    background-color: var(--accent);
+}
+
+.social-list__icon--white {
+    fill: var(--background-white);
 }
 
 /* Form__________________________________________ */

@@ -639,11 +639,11 @@ margin-right: 50px;
   display: flex;
 }
 
-.company-item {
+.company-list__item {
   flex-basis: calc(16.6666666667% - var(--card-gap));
 }
 
-.company-link {
+.company-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -653,20 +653,20 @@ margin-right: 50px;
   transition: border var(--time-animatio) var(--cubic-bezier);
 }
 
-.company-icon {
+.company-list__icon {
   width: 106px;
   height: 60px;
   fill: var(--icon-gray);
   transition: fill var(--time-animatio) var(--cubic-bezier);
 }
 
-.company-link:hover,
-.company-link:focus {
+.company-list__link:hover,
+.company-list__link:focus {
   border: 1px solid var(--accent);
 }
 
-.company-link:hover .company-icon,
-.company-link:focus .company-icon {
+.company-list__link:hover .company-list__icon,
+.company-list__link:focus .company-list__icon {
   fill: var(--accent);
 }
 
@@ -704,6 +704,7 @@ margin-right: 50px;
   color: var(--accent);
 }
 
+/* Address____________________________________ */
 .address {
   font-style: inherit;
 }
@@ -727,24 +728,6 @@ margin-right: 50px;
   margin-bottom: 5px;
 }
 
-/* Address____________________________________ */
-.footer .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer .circle {
-  background-color: var(--background-white-transperent);
-}
-
-.footer .circle:hover,
-.footer .circle:focus {
-  background-color: var(--accent);
-}
-
-.footer .social-icon {
-  fill: var(--background-white);
-}
-
 /* Social________________________________________ */
 .footer .title {
   margin-bottom: 20px;
@@ -754,6 +737,23 @@ margin-right: 50px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-white);
+}
+
+.footer .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__circle--transparent {
+  background-color: var(--background-white-transperent);
+}
+
+.social-list__circle--transparent:hover,
+.social-list__circle--transparent:focus {
+  background-color: var(--accent);
+}
+
+.social-list__icon--white {
+  fill: var(--background-white);
 }
 
 /* Form__________________________________________ */
