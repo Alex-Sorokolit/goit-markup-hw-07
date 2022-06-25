@@ -25,19 +25,28 @@
 .logo--black {
     color: var(--text-black);
     transition: color var(--time-animatio) var(--cubic-bezier);
+    .logo:hover &,
+    .logo:focus & {
+            color: var(--accent);
+        }
 }
 
-.logo:hover .logo--black,
-.logo:focus .logo--black {
-    color: var(--accent);
-}
+
 
 
 /* Nav-list___________________________________________ */
 
 .nav-list {
     display: flex;
+    &__item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
     
+            padding-top: 32px;
+            padding-bottom: 32px;
+            position: relative;
+        }
 }
 
 /* Відступи пунктів навігації*/
@@ -50,39 +59,30 @@ margin-right: 50px;
 } */
 
 
-.nav-list__item {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-}
 
 .nav-list__link {
     text-decoration: none;
     color: var(--text-dark-gray);
     transition: color var(--time-animatio) var(--cubic-bezier);
-}
 
-.nav-list__link:hover,
-.nav-list__link:focus,
-.nav-list__link--current {
-    color: var(--accent);
-}
+    &:hover,
+    &:focus,
+    &--current {
+            color: var(--accent);
+        }
 
-.nav-list__link--current::after {
-    content: ' ';
-    background-color: var(--accent);
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
+    &--current::after {
+        content: ' ';
+        background-color: var(--accent);
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        }
 }
-
 
 /* Auth-list___________________________________________ */
 
@@ -102,11 +102,10 @@ margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 31px;
     transition: color var(--time-animatio) var(--cubic-bezier);
-}
-
-.auth-list__link:hover,
-.auth-list__link:focus {
-    color: var(--accent);
+    &:hover,
+    &:focus {
+        color: var(--accent);
+        }
 }
 
 .auth-list__icon {

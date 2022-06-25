@@ -26,12 +26,14 @@
     color: var(--text-white);
 
     transition: color var(--time-animatio) var(--cubic-bezier);
+
+    .logo:hover &,
+    .logo:focus & {
+            color: var(--accent);
+        }
 }
 
-.logo:hover .logo--white,
-.logo:focus .logo--white {
-    color: var(--accent);
-}
+
 
 /* Address____________________________________ */
 .address {
@@ -46,16 +48,18 @@
     color: var(--text-gray-alfa);
 
     transition: color var(--time-animatio) var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+            color: var(--accent);
+        }
 }
 
 .address-list__link--white {
     color: var(--text-white);
 }
 
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent);
-}
+
 
 
 
@@ -78,12 +82,14 @@
 
 .social-list__circle--transparent {
     background-color: var(--background-white-transperent);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent);
+        }
 }
 
-.social-list__circle--transparent:hover,
-.social-list__circle--transparent:focus {
-    background-color: var(--accent);
-}
+
 
 .social-list__icon--white {
     fill: var(--background-white);
@@ -106,15 +112,17 @@
     margin-right: 12px;
     border: 2px solid var(--white-transperent);
     border-radius: 4px;
+
+    &::placeholder {
+        flex-grow: 1;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        }
 }
 
-.subscribe__email::placeholder {
-    flex-grow: 1;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 .subscribe__icon {
     margin-left: 10px;

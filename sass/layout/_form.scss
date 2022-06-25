@@ -31,12 +31,14 @@
     outline: none;
     padding-left: 41px;
     transition: border var(--time-animatio) var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+            border: 1px solid var(--accent);
+        }
 }
 
-.feedback-input:hover,
-.feedback-input:focus {
-    border: 1px solid var(--accent);
-}
+
 
 .feedback-input__icon {
     position: absolute;
@@ -44,12 +46,13 @@
     top: 50%;
     transform: translateY(-50%);
     transition: fill var(--time-animatio) var(--cubic-bezier);
+    .feedback-input:hover+&,
+    .feedback-input:focus+& {
+            fill: var(--accent);
+        }
 }
 
-.feedback-input:hover+.feedback-input__icon,
-.feedback-input:focus+.feedback-input__icon {
-    fill: var(--accent);
-}
+
 
 .user-text {
     width: 100%;
@@ -62,19 +65,19 @@
     margin-bottom: 20px;
 
     transition: border var(--time-animatio) var(--cubic-bezier);
+
+    &::placeholder {
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent);
+    }
 }
 
-.user-text::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.user-text:hover,
-.user-text:focus {
-    border: 1px solid var(--accent);
-}
 
 .privacy {
     margin-bottom: 30px;
@@ -103,28 +106,35 @@
     justify-content: center;
     margin-right: 7px;
     transition: border var(--time-animatio) var(--cubic-bezier);
+
+    .privacy__text:hover & {
+            border: 2px solid var(--accent);
+        }
+    
+    .checkbox:focus+.privacy__text & {
+            border: 2px solid var(--accent);
+        }
+
+    .checkbox:checked+.privacy__text & {
+            background-color: var(--accent);
+            /* border: 2px solid transparent; */
+            border: none;
+        }
 }
 
-.privacy__text:hover .privacy__checkbox {
-    border: 2px solid var(--accent);
-}
 
-.checkbox:focus + .privacy__text .privacy__checkbox {
-    border: 2px solid var(--accent);
-}
 
-.checkbox:checked + .privacy__text .privacy__checkbox {
-    background-color: var(--accent);
-    /* border: 2px solid transparent; */
-    border: none;
-}
 
-.checkbox:checked + .privacy__text .privacy__icon {
-    fill: var(--background-white);
-}
+
+
+
 
 .privacy__icon {
     fill: transparent;
+
+    .checkbox:checked+.privacy__text & {
+            fill: var(--background-white);
+        }
 }
 
 .privacy__link {
@@ -137,6 +147,3 @@
     transition: background-color var(--time-animatio) var(--cubic-bezier);
 }
 
-.modal .submit-button:hover {
-    background-color: var(--accent-hover);
-}
