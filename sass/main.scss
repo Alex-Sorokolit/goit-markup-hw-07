@@ -1,5 +1,9 @@
+// Utilities_____________________________________________
 @import './utilities/_variables';
+
+// Base__________________________________________________
 @import './base/_reset';
+@import './base/_commons';
 
 
 // Components____________________________________________
@@ -8,16 +12,16 @@
 @import './components/components';
 @import './components/logo';
 @import './components/social';
+@import './components/modal';
+@import './components/form';
 
 
 
 // Main-page__________________________________________
-@import './layout/modal';
 @import './layout/header';
-@import './layout/form';
 @import './layout/hero';
 @import './layout/specifics';
-@import './layout/do';
+@import './layout/preview';
 @import './layout/team';
 @import './layout/clients';
 @import './layout/footer';
