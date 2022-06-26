@@ -1,6 +1,15 @@
 @import './utilities/_variables';
-@import './basik/_reset';
+@import './base/_reset';
+
+
+// Components____________________________________________
+@import './components/button';
+@import './components/cardset';
 @import './components/components';
+@import './components/logo';
+@import './components/social';
+
+
 
 // Main-page__________________________________________
 @import './layout/modal';

@@ -22,14 +22,6 @@
     margin-right: 93px;
 }
 
-.logo--black {
-    color: var(--text-black);
-    transition: color var(--time-animatio) var(--cubic-bezier);
-    .logo:hover &,
-    .logo:focus & {
-            color: var(--accent);
-        }
-}
 
 
 

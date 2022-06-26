@@ -1,37 +1,46 @@
-.footer-columns {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-column:not(:last-child) {
-    margin-right: 70px;
-}
-
-.footer-column:last-child {
-    margin-left: auto;
-}
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-dark-gray);
-}
 
-.footer-logo {
-    display: block;
-    margin-bottom: 20px;
-}
+    &__title {
+            margin-bottom: 20px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--text-white);
+        }
+    
+        .footer .item:not(:last-child) {
+            margin-right: 10px;
+        }
+    
+       
 
-.logo--white {
-    color: var(--text-white);
-
-    transition: color var(--time-animatio) var(--cubic-bezier);
-
-    .logo:hover &,
-    .logo:focus & {
-            color: var(--accent);
+    &-columns {
+        display: flex;
+        align-items: baseline;
+        }
+    
+    &-column:not(:last-child) {
+        margin-right: 70px;
+        }
+    
+    &-column:last-child {
+        margin-left: auto;
+        }
+    
+    &-logo {
+        display: block;
+        margin-bottom: 20px;
         }
 }
+
+
+
 
 
 
@@ -39,25 +48,31 @@
 .address {
     font-style: inherit;
 }
-.address-list__item {
+
+.address-list {
+
+&__item {
     display: block;
     margin-bottom: 5px;
-}
+    }
 
-.address-list__link {
+&__link {
     color: var(--text-gray-alfa);
-
     transition: color var(--time-animatio) var(--cubic-bezier);
-
     &:hover,
     &:focus {
-            color: var(--accent);
-        }
+        color: var(--accent);
+    }
 }
 
-.address-list__link--white {
+&__link--white {
     color: var(--text-white);
 }
+}
+
+
+
+
 
 
 
@@ -65,29 +80,6 @@
 
 /* Social________________________________________ */
 
-.footer .title {
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-white);
-}
-
-.footer .item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.social-list__circle--transparent {
-    background-color: var(--background-white-transperent);
-
-    &:hover,
-    &:focus {
-            background-color: var(--accent);
-        }
-}
 
 
 
