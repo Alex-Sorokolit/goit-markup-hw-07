@@ -13,6 +13,11 @@ font-weight: 500; link h3
 font-weight: 700; button h2 h3
 font-weight: 900; h1 */
 /* ----------------------------------------------------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0px;
