@@ -6,6 +6,12 @@
     // outline: solid tomato;
 }
 
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--text-dark-gray);
+}
+
 .section {
     padding: 94px 0px;
     &__title {
@@ -16,14 +22,6 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
-}
-
-
-
-.title {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: var(--text-dark-gray);
 }
 
 .visually-hidden {
